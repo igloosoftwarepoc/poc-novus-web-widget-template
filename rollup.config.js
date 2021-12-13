@@ -9,10 +9,11 @@ export default {
   input: ['src/index.js'],
   output:
   {
+		exports: 'named',
     file: 'dist/bundle.js',
     format: 'iife',
 		globals: {
-			'react': 'React'
+			react: 'React'
 		},
 		name: 'bundle'
   },
