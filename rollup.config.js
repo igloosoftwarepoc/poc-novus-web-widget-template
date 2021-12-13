@@ -6,15 +6,14 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 
 export default {
+	external: ['react'],
   input: ['src/index.js'],
-  output:
-  {
-		exports: 'named',
-    file: 'dist/bundle.js',
-    format: 'iife',
+  output: {
 		globals: {
 			react: 'React'
 		},
+    file: 'dist/bundle.js',
+    format: 'iife',
 		name: 'bundle'
   },
   plugins: [

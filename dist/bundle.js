@@ -1,4 +1,4 @@
-var bundle = (function (exports, React) {
+var bundle = (function (React) {
 	'use strict';
 
 	function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -15,10 +15,6 @@ var bundle = (function (exports, React) {
 	  });
 	};
 
-	exports["default"] = App;
+	return App;
 
-	Object.defineProperty(exports, '__esModule', { value: true });
-
-	return exports;
-
-})({}, React);
+})(React);
