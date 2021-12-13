@@ -9,9 +9,12 @@ export default {
   input: ['src/index.js'],
   output:
   {
-		exports: 'default',
     file: 'dist/bundle.js',
-    format: 'cjs'
+    format: 'iife',
+		globals: {
+			'react': 'React'
+		},
+		name: 'bundle'
   },
   plugins: [
     babel({
