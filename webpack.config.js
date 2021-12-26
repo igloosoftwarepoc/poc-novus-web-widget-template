@@ -1,6 +1,6 @@
-const remoteComponentConfig = require("./remote-component.config.js").resolve;
+const externalsConfig = require("./webpack-externals.config.js").resolve;
 
-const externals = Object.keys(remoteComponentConfig).reduce(
+const externals = Object.keys(externalsConfig).reduce(
   (obj, key) => ({ ...obj, [key]: key }),
   {}
 );
