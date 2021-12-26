@@ -10,7 +10,7 @@ module.exports = {
 	externals,
 	output: {
 		filename: 'bundle.js',
-		libraryTarget: 'commonjs'
+		libraryTarget: 'commonjs-module'
 	},
 	module: {
     rules: [
